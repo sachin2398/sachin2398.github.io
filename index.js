@@ -50,5 +50,23 @@ function saveFile(e) {
   localStorage.setItem("portfolioData", JSON.stringify(Formdata))
 }
 
+const sections = document.querySelectorAll("#home, #about, #skills, #projects, #github, #contact, #footer");
+
+
+// Get all the navigation links
+const navScroll = document.querySelectorAll('#nav-bar a');
+
+// Function to highlight the current section in the navigation menu
+function highlightNavLink() {
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    navScroll.forEach(link => link.classList.remove('active'));
+    navScroll[index].classList.add('active');
+}
+
+// Add event listener for scroll
+window.addEventListener('scroll', highlightNavLink);
 
 
