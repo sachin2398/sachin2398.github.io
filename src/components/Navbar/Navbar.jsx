@@ -53,7 +53,7 @@ function Navbar() {
         setActiveSection(currentSection);
     };
 
-    return (
+    return ( 
         <>
             <div id='nav-menu'>
                 {/* For large Screens */}
