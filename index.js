@@ -16,8 +16,7 @@ navLinks.forEach((navLinks) => {
 
 function openResume() {
   window.open(
-    "https://drive.google.com/file/d/1en15uX0-2ZViYWcDQp-6ZiWPjFKuEIFy/view?usp=sharing",
-    "_blank"
+    "https://drive.google.com/file/d/1uKtj71CItO7gz7R7n0BmyuVtxg7nsQj_/view?usp=sharing",
   );
 }
 
